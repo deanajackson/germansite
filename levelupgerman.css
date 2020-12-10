@@ -1,0 +1,493 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*=============
+    Global Style
+================*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#navbar-override .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    color: white;
+}
+
+#navbar-override {
+    border-color: #e7e7e7;
+    background-color: #993300;
+}
+
+#navbar-override .navbar-nav > li > a {
+    /*font-family: 'Lora', serif;*/
+    color: white;
+}
+
+
+#navbar-override .navbar-nav > .active > a {
+    color: black;
+    background-color: #e7e7e7;
+}
+
+#navbar-override .navbar-default .navbar-nav > .active > a:focus,
+#navbar-override .navbar-default .navbar-nav > .active > a:hover {
+    color: black;
+    background-color: #e7e7e7;
+}
+
+#wrapper {
+    background-color: #e7e7e7;
+}
+
+#wrapper h1 {
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#wrapper h2 {
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+#wrapper p {
+    font-family: 'Lora', serif;
+}
+
+#wrapper main {
+    margin: 10px;
+}
+
+#wrapper .button-container {
+    margin: 5px 0 10px 0;
+    align-items: center;
+}
+
+#wrapper .get-started-button,
+#wrapper #test-yourself-button {
+    background-color: #993300;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer p {
+    font-family: 'Lora', serif;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #993300;
+    padding: 20px 0;
+}
+
+.desktop-on {
+    display: none;
+}
+
+/* Style to make YouTube iframe responsive */
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.resourcelist li {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+}
+
+.resourcelist li a {
+    display: block;
+    width: 50%;
+    border-width: 1px;
+    border-color: #993300;
+    border-style: solid;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 10px 0;
+    background-color: #993300;
+
+}
+
+#A1-links, #A2-links, #B1-links ,#B2-links, #C1-links{
+    display: none;
+}
+
+/*style for quiz*/
+#quiz {
+    
+    font-family: 'Lora', serif;
+    color: White;
+    margin: 20px;
+    padding: 15px;
+    background-color: #993300;
+}
+
+.question {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.answers {
+    margin-bottom: 20px;
+}
+
+.answers label {
+    display: block;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+#submit {
+    background-color: #993300;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#results{
+    margin: 10px;    
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+}
+#recommendation{
+    margin: 10px;    
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight:600;
+}
+
+#quiz-wrapper{
+    display:none;
+}
+.take-test-button{
+    background-color: #993300;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 4px;
+}
+
+
+/*=============
+    Desktop Style
+================*/
+@media (min-width: 1024px) {
+    #wrapper main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #top-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    #desktop-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+
+    }
+
+    .desktop-off {
+        display: none;
+    }
+
+    .desktop-on {
+        display: block;
+    }
+
+    #feature {
+        display: grid;
+        grid-auto-columns: auto auto;
+        margin: 20px;
+
+    }
+
+    #feature-about {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+    }
+
+    #level-box ul,
+    li {
+        text-align: center;
+        color: white;
+    }
+
+    #level-box a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #level-box a:hover {
+        font-weight: bold;
+    }
+
+    #levellist li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    #levellist li a {
+        display: block;
+        width: 75%;
+        border-width: 1px;
+        border-color: #993300;
+        border-style: solid;
+        border-radius: 4px;
+        color: white;
+        text-decoration: none;
+        padding: 0.5em 0;
+        margin: 10px 0;
+        background-color: #993300;
+    }
+
+    #feature-resources {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 30px;
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+
+}
+
+/*=============
+   Tablet Style
+================*/
+@media (min-width: 750px) {
+    #feature {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    #feature-about {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+
+    #main-text {
+        max-width: 1000px;
+    }
+
+    #text-one {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #text-two {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #text-three {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #text-four {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #text-five {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+}
+
+
+

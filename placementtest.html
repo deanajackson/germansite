@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Placement Test | Level Up German</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="levelupgerman.css">
+    <link rel="icon" type="image/x-icon" href="" />
+    <!-- The below link is to the Bootstrap 3.3.5 default CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Bootstrap 3.3.5 core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body id="wrapper">
+<nav class="navbar navbar-default" id="navbar-override">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Level Up German</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Placement Test</a></li>
+                <li><a href="levels.html">Levels</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+</nav>
+<main>
+    <div id="top-grid">
+        <div id="hero">
+            <img class="desktop-off" src="assets/esslingen_von_oben_1000x320.jpg" alt="Aerial view of Esslingen">
+            <img class="desktop-on" src="assets/esslingen_von_oben_439x190.jpg" alt="Aerial view of Esslingen">
+        </div>
+        <div id="main-text">
+            <h1>Discover your level</h1>
+            <p>Do you want a better idea of your German language skills? Take our quick quiz to get an approximation of your current level. The beginner level is A1 and the levels climb up to C2. We have resources available from level A1 to C1, so there's something for everyone. Good luck!</p>
+            <button class="take-test-button" onclick="toggleQuiz()">Take the Test</button>
+        </div>
+    </div>
+
+    <div id="quiz-wrapper">
+        <div id="quiz"></div>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
+        <div id="recommendation"></div>
+    </div>
+</main>
+<footer>
+    <p>Level Up German &copy;2020</p>
+    <p>Designed and Developed by Deana Jackson</p>
+</footer>
+<script src="placementtest.js"></script>
+
+</body>
+
+</html>
